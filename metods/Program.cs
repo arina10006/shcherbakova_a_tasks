@@ -10,6 +10,7 @@ namespace metods
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
