@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex5_in_Function_basic_value
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex2_in_Function_basic_value_y", "ex2_in_Function_basic_value_y\ex2_in_Function_basic_value_y.csproj", "{E81CC776-ADA9-4E29-AF56-9DF4137D3314}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Copy_from_ex5", "Copy_from_ex5\Copy_from_ex5.csproj", "{E468FCC0-7E12-42AB-B9A7-4EA3E041D1DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E468FCC0-7E12-42AB-B9A7-4EA3E041D1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E468FCC0-7E12-42AB-B9A7-4EA3E041D1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E468FCC0-7E12-42AB-B9A7-4EA3E041D1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E468FCC0-7E12-42AB-B9A7-4EA3E041D1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
