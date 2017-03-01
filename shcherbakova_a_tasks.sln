@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metods", "metods\metods.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "polendrom", "ConsoleApplication1\polendrom.csproj", "{FE21BE26-A369-4C41-B156-6EA05FD6A1F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex5_in_Function_basic_value_y", "ex5_in_Function_basic_value_y\ex5_in_Function_basic_value_y.csproj", "{B254CDAC-EFD3-4137-9EC7-269C54DE69A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex2_in_Function_basic_value_y", "ex2_in_Function_basic_value_y\ex2_in_Function_basic_value_y.csproj", "{E81CC776-ADA9-4E29-AF56-9DF4137D3314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FE21BE26-A369-4C41-B156-6EA05FD6A1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE21BE26-A369-4C41-B156-6EA05FD6A1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE21BE26-A369-4C41-B156-6EA05FD6A1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B254CDAC-EFD3-4137-9EC7-269C54DE69A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B254CDAC-EFD3-4137-9EC7-269C54DE69A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B254CDAC-EFD3-4137-9EC7-269C54DE69A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B254CDAC-EFD3-4137-9EC7-269C54DE69A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81CC776-ADA9-4E29-AF56-9DF4137D3314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
