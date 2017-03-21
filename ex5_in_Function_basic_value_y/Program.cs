@@ -32,7 +32,7 @@ namespace ex5_in_Function_basic_value_y
                 Console.WriteLine("Введитель число из знаменателя");
                 string b = Console.ReadLine();
                 double denominator = Convert.ToDouble(b);
-
+               
                 double y = Fraction(numerator, denominator);
                 
                 summ = summ + y;
