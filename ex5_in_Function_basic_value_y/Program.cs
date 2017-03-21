@@ -19,9 +19,12 @@ namespace ex5_in_Function_basic_value_y
         static void Main(string[] args)
         {
             double summ = 0;
-            for (int i = 1; i <= 3; i++)
-            {
-                Console.WriteLine("Введите значения для дроби {0}",i);
+            Console.WriteLine("Хотите ввести значения дроби? 1-Да, 2-Нет");
+
+            int q = Convert.ToInt16(Console.ReadLine());
+            while (q == 1)
+                {
+                Console.WriteLine("Введите значения для дроби ");
                 Console.WriteLine("Введитель число из числителя");
                 string a = Console.ReadLine();
                 double numerator = Convert.ToDouble(a);
@@ -33,8 +36,17 @@ namespace ex5_in_Function_basic_value_y
                 double y = Fraction(numerator, denominator);
                 
                 summ = summ + y;
+
+                Console.WriteLine("Хотите ввести значения для следующей дроби? 1-Да, 2-Нет");
+
+                int q2 = Convert.ToInt16(Console.ReadLine());
+                if (q2==2)
+                {
+                    break;
+                }
                 
-            }
+                }
+            
 
             Console.WriteLine("Сумма у={0}", summ);
             Console.ReadKey();
