@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metods", "metods\metods.csproj", "{5D026EEB-A13C-478A-9AAD-94F038ED6C32}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Copy_from_ex5", "Copy_from_ex5\Copy_from_ex5.csproj", "{E468FCC0-7E12-42AB-B9A7-4EA3E041D1DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex10_in_Function_basic_trapeze", "ex10_in_Function_basic_trapeze\ex10_in_Function_basic_trapeze.csproj", "{64634C68-B62A-417B-B99E-DAA56893773C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work_with_texst", "work_with_texst\work_with_texst.csproj", "{23FCBEF4-CC09-479A-927F-19F36595C656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{64634C68-B62A-417B-B99E-DAA56893773C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64634C68-B62A-417B-B99E-DAA56893773C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64634C68-B62A-417B-B99E-DAA56893773C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23FCBEF4-CC09-479A-927F-19F36595C656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FCBEF4-CC09-479A-927F-19F36595C656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FCBEF4-CC09-479A-927F-19F36595C656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FCBEF4-CC09-479A-927F-19F36595C656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
