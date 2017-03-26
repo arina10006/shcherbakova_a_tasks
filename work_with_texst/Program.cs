@@ -8,10 +8,31 @@ namespace work_with_texst
 {
     class Program
     {
+        static int PercentOfALetter(char[] textSymbols, char letter)
+        {
+            int pct = 0, numberOfLetters = 0;
+            foreach (var i in textSymbols)
+            {
+                if (i == letter)
+                {
+                    numberOfLetters = numberOfLetters +1 ;
+                }
+
+                pct = numberOfLetters / (textSymbols.Length / 100);
+            }
+            return pct;
+        }
         static void Main(string[] args)
         {
             string text = System.IO.File.ReadAllText(@"C:\Users\HP\Desktop\For Work.txt");
             Console.WriteLine("Текст: " + text);
+
+            System.Text.StringBuilder sb = new System.Text.StringBuilder(text);
+            for (int j = 0; j < sb.Length; j++)
+            {
+                if (System.Char.IsUpper(sb[j]) == true)
+                    sb[j] = System.Char.ToLower(sb[j]);
+            }
 
             string words = text.Trim(new char[] { ',', '.', '—', '«', '»', '-' });
             string[] textWords = words.Split(new char[] { ' ' });
@@ -21,7 +42,13 @@ namespace work_with_texst
             Console.WriteLine("Количество символов: " + textSimbol.Length);
             int copyTextSimbol = textSimbol.Length;
 
+            char[] textSimbolsToLower = sb.ToCharArray();
 
+            char letter = 'т';
+            int ptc = PercentOfALetter(textSimbol, letter);
+            Console.WriteLine("Процент буквы в тексте: {0} %",ptc);
+
+            
         }
     }
 }
