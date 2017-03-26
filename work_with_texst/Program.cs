@@ -10,8 +10,18 @@ namespace work_with_texst
     {
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\Public\Рабочий стол\Путин.txt");
-            System.Console.WriteLine("Contents of WriteText.txt = {0}", text);
+            string text = System.IO.File.ReadAllText(@"C:\Users\HP\Desktop\For Work.txt");
+            Console.WriteLine("Текст: " + text);
+
+            string words = text.Trim(new char[] { ',', '.', '—', '«', '»', '-' });
+            string[] textWords = words.Split(new char[] { ' ' });
+            Console.WriteLine("Количество слов: " + textWords.Length);
+
+            char[] textSimbol = text.ToCharArray();
+            Console.WriteLine("Количество символов: " + textSimbol.Length);
+            int copyTextSimbol = textSimbol.Length;
+
+
         }
     }
 }
