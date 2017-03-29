@@ -84,7 +84,7 @@ namespace work_with_texst
                 }
                 else
                 {
-                    
+                    int a = 0 ;// это херня
                 }
 
                 }
