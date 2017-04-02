@@ -15,35 +15,89 @@ namespace work_with_texst
             {
                 if (i == letter)
                 {
-                    numberOfLetters = numberOfLetters +1 ;
+                    numberOfLetters = numberOfLetters + 1;
                 }
 
                 pct = numberOfLetters / (textSymbols.Length / 100);
             }
             return pct;
         }
+
+        static int NumberOfWords(char[] textSymbols, char letter)
+        {
+            int numberOfWords = 0;
+            foreach (var i in textSymbols)
+            {
+                if (i == letter)
+                {
+                    numberOfWords = numberOfWords + 1;
+                }
+
+            }
+            return numberOfWords;
+        }
+
+        static bool SearchInUnique(string uniqueStr, char letter)
+        {
+            for (int i = 0; i < uniqueStr.Length; i++)
+			{
+			    if (uniqueStr[i]== letter)
+	            {
+                    return false;
+	            }
+            }
+            return true;
+
+
+        }
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\HP\Desktop\For Work.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\Путин.txt");
             Console.WriteLine("Текст: " + text);
 
-            
+            System.Text.StringBuilder sb = new System.Text.StringBuilder(text);
+            for (int j = 0; j < sb.Length; j++)
+            {
+                if (System.Char.IsUpper(sb[j]) == true)
+                    sb[j] = System.Char.ToLower(sb[j]);
+            }
 
-            string words = text.Trim(new char[] { ',', '.', '—', '«', '»', '-' });
-            string[] textWords = words.Split(new char[] { ' ' });
+            string[] textWords = text.Split(new char[] { ' ', ',', '.', '—', '«', '»', '-' });
             Console.WriteLine("Количество слов: " + textWords.Length);
 
             char[] textSimbol = text.ToCharArray();
             Console.WriteLine("Количество символов: " + textSimbol.Length);
             int copyTextSimbol = textSimbol.Length;
 
-            string toLowText = text;
-            
+            char[] textSimbolsToLower = sb.ToCharArray();
+
             char letter = 'т';
             int ptc = PercentOfALetter(textSimbol, letter);
-            Console.WriteLine("Процент буквы в тексте: {0} %",ptc);
+            Console.WriteLine("Процент буквы в тексте: {0} %", ptc);
 
-            
+
+            string lowerText = text.ToLower();
+            Console.WriteLine("Текст в нижнем регистре" + lowerText);
+
+            string uniqueChar = "";
+
+            foreach (char i in lowerText)
+            {
+                if (uniqueChar.Length == 0)
+                {
+                    uniqueChar = uniqueChar + i;
+                }
+                else
+                {
+                    int a = 0 ;// это херня
+                }
+
+                }
+
+
+            }
+
+            Console.WriteLine("Уникальные символы" + uniqueChar);
         }
     }
 }
