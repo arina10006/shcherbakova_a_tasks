@@ -96,14 +96,18 @@ namespace work_with_texst
             }
 
             Console.WriteLine("Уникальные символы: " + uniqueChar);
-
+            string textForPrc = "";
             foreach (char i in uniqueChar)
             {
                 double prc = PercentOfALetter(textSimbol, i);
+                textForPrc = textForPrc + prc + "\t";
                 Console.WriteLine("Процент символа \"{0}\" в тексте, равен : {1}%", i, prc);
+                 
             }
 
 
+            string allText = lowerText + ';' + "\t" + uniqueChar + ';' + "\t" + textForPrc + ';' + "\t";
+            System.IO.File.WriteAllText( @"C:\Users\HP\Desktop\resalt.txt", allText);
 
             }
 
