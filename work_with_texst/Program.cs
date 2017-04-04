@@ -8,9 +8,9 @@ namespace work_with_texst
 {
     class Program
     {
-        static int PercentOfALetter(char[] textSymbols, char letter)
+        static double PercentOfALetter(char[] textSymbols, char letter)
         {
-            int pct = 0, numberOfLetters = 0;
+            double pct = 0, numberOfLetters = 0;
             foreach (var i in textSymbols)
             {
                 if (i == letter)
@@ -52,15 +52,9 @@ namespace work_with_texst
         }
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\Путин.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\HP\Desktop\For Work.txt");
             Console.WriteLine("Текст: " + text);
 
-            System.Text.StringBuilder sb = new System.Text.StringBuilder(text);
-            for (int j = 0; j < sb.Length; j++)
-            {
-                if (System.Char.IsUpper(sb[j]) == true)
-                    sb[j] = System.Char.ToLower(sb[j]);
-            }
 
             string[] textWords = text.Split(new char[] { ' ', ',', '.', '—', '«', '»', '-' });
             Console.WriteLine("Количество слов: " + textWords.Length);
@@ -69,15 +63,17 @@ namespace work_with_texst
             Console.WriteLine("Количество символов: " + textSimbol.Length);
             int copyTextSimbol = textSimbol.Length;
 
-            char[] textSimbolsToLower = sb.ToCharArray();
 
             char letter = 'т';
-            int ptc = PercentOfALetter(textSimbol, letter);
+            double ptc = PercentOfALetter(textSimbol, letter);
             Console.WriteLine("Процент буквы в тексте: {0} %", ptc);
 
 
             string lowerText = text.ToLower();
             Console.WriteLine("Текст в нижнем регистре" + lowerText);
+
+            string[] lowerTextWord = lowerText.Split(new char[] { ' ', ',', '.', '—', '«', '»', '-' });
+            char[] lowerTextSibbol = lowerText.ToCharArray();
 
             string uniqueChar = "";
 
@@ -89,15 +85,29 @@ namespace work_with_texst
                 }
                 else
                 {
-                    int a = 0 ;// это херня
+                    bool lokal = SearchInUnique(uniqueChar, i);
+                    if (lokal)
+                    {
+                        uniqueChar = uniqueChar + i;
+
+                    }
                 }
 
-                }
+            }
+
+            Console.WriteLine("Уникальные символы: " + uniqueChar);
+
+            foreach (char i in uniqueChar)
+            {
+                double prc = PercentOfALetter(textSimbol, i);
+                Console.WriteLine("Процент символа \"{0}\" в тексте, равен : {1}%", i, prc);
+            }
+
 
 
             }
 
-            Console.WriteLine("Уникальные символы" + uniqueChar);
+            
         }
     }
-}
+
