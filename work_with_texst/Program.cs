@@ -36,6 +36,19 @@ namespace work_with_texst
             }
             return numberOfWords;
         }
+        static int NumberOfSymbol (string text, char letter)
+        {
+            int numberOfSymbols = 0;
+            foreach (var i in text)
+            {
+                if (i == letter)
+                {
+                    numberOfSymbols = numberOfSymbols + 1;
+                }
+
+            }
+            return numberOfSymbols;
+        }
 
         static bool SearchInUnique(string uniqueStr, char letter)
         {
@@ -52,7 +65,7 @@ namespace work_with_texst
         }
         static void Main(string[] args)
         {
-            string text = System.IO.File.ReadAllText(@"C:\Users\HP\Desktop\For Work.txt");
+            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\Путин.txt");
             Console.WriteLine("Текст: " + text);
 
 
@@ -100,16 +113,31 @@ namespace work_with_texst
             foreach (char i in uniqueChar)
             {
                 double prc = PercentOfALetter(textSimbol, i);
-                textForPrc = textForPrc + prc + "\t";
+                textForPrc = textForPrc +"Процент буквы " + i + " = " + prc + "\n";
+                string file = i + ";" + prc + "\r\n"; 
                 Console.WriteLine("Процент символа \"{0}\" в тексте, равен : {1}%", i, prc);
-                 
+                System.IO.File.AppendAllText(@"C:\Users\student\Desktop\prs of lettrs.txt", file);
             }
+
+            foreach (char i in uniqueChar)
+            {
+                
+                if((i>=1072)&&(i<=1103))
+                {
+                    int number = NumberOfSymbol(lowerText, i);   
+                    string numbers = i + ";" + number + "\r\n";
+                    System.IO.File.AppendAllText(@"C:\Users\student\Desktop\numberOfLetters.txt", numbers);
+                }
+            }
+
 
 
             string allText = lowerText + ';' + "\t" + uniqueChar + ';' + "\t" + textForPrc + ';' + "\t";
-            System.IO.File.WriteAllText( @"C:\Users\HP\Desktop\resalt.txt", allText);
+            System.IO.File.WriteAllText( @"C:\Users\student\Desktop\resalt.txt", allText);
 
             }
+
+
 
             
         }
