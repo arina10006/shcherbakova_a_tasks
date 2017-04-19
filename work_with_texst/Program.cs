@@ -122,7 +122,7 @@ namespace work_with_texst
             foreach (char i in uniqueChar)
             {
                 
-                if((i>=1072)&&(i<=1103))
+                if((i>=97)&&(i<=122))
                 {
                     int number = NumberOfSymbol(lowerText, i);   
                     string numbers = i + ";" + number + "\r\n";
