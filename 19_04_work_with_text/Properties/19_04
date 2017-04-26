@@ -1,0 +1,104 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace _19_04_work_with_text
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            string text = File.ReadAllText(@"C:\Users\student\Desktop\news.txt");
+            Console.WriteLine(text);
+            string lwrText = text.ToLower();
+            //string[] words = lwrText.Split(new char[] { ' ', ',', '.', '-', '(', ')', '"', '—', '«', '»', ' ', '\n', '\r' });
+
+            string[] wordsWithNull = lwrText.Split(new char[] { ' ', ',', '.', '-', '(', ')', '"', '—', '«', '»', ' ', '\n', '\r' });
+
+            int numberOfNull = 0;
+            for (int i = 0; i < wordsWithNull.Length; i++)
+            {
+                if (wordsWithNull[i] == "")
+                {
+                    numberOfNull = numberOfNull + 1;
+                }
+
+            }
+            int a = wordsWithNull.Length - numberOfNull;
+            string[] words = new string[a];
+
+            int j = 0;
+            for (int i = 0; i < wordsWithNull.Length; )
+            {
+                    if (wordsWithNull[i] == "")
+                        i++;
+                    else
+                    {
+                        words[j] = wordsWithNull[i];
+                        i++;
+                        j++;
+                    }
+            }
+            string word;
+            int[] lenghtOfWords = new int[words.Length];
+            for (int i = 0; i < words.Length; i++)
+            {
+                int lngth = words.Length;
+                word = Convert.ToString(words[i]);
+                lenghtOfWords[i] = words[i].Length;
+            }
+            for (int i = 0; i < lenghtOfWords.Length; i++)
+            {
+                Console.Write( lenghtOfWords[i]);
+            }
+
+            int max = 1;
+
+            for (int i = 0; i < lenghtOfWords.Length; i++)
+            {
+                if (max <= lenghtOfWords[i])
+                {
+                    max = lenghtOfWords[i];
+                }
+            }
+            int min = max;
+            for (int i = 0; i < lenghtOfWords.Length; i++)
+            {
+                if ((min >= lenghtOfWords[i]) && (lenghtOfWords[i] != 0))
+                {
+                    min = lenghtOfWords[i];
+                }
+            }
+
+            for (int i = 0; i < lenghtOfWords.Length; i++)
+            {
+                if ( min == lenghtOfWords[i])
+                {
+                   if (words[i].Trim() != "")
+	                {
+		                 string minWord = words[i] + "\r\n";
+                         System.IO.File.AppendAllText(@"C:\Users\student\Desktop\min.txt", minWord);
+	                }
+                   
+                }
+            }
+            for (int i = 0; i < lenghtOfWords.Length; i++)
+            {
+                if (max == lenghtOfWords[i])
+                {
+                    string maxWord = words[i] + "\r\n";
+                    System.IO.File.AppendAllText(@"C:\Users\student\Desktop\max.txt", maxWord);
+                }
+            }
+
+
+
+            // ghbr
+
+        }
+    }
+}
