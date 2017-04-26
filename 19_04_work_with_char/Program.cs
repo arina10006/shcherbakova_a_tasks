@@ -12,22 +12,21 @@ namespace _19_04_work_with_char
     {
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\HP\Desktop\news.txt");
+            string text = File.ReadAllText(@"C:\Users\student\Desktop\news.txt");
 
             char[] arra = new char[text.Length];
             int[] erre = new int[text.Length];
             char[] more = new char[text.Length];
             char[] end = new char[text.Length];
+            int[] codeOfWords = new int[text.Length];
 
             Random rnd = new Random();
-            int n = rnd.Next(1, 7);
-            Console.WriteLine(n);
+            int n;
 
             //string naw = Console.ReadLine();
             //int n = Convert.ToInt16(naw);
 
-            string number = "Число кодировки: " + n + "\r\n";
-            File.AppendAllText(@"C:\Users\HP\Desktop\code_the_text.txt",number);
+         
 
             for (int i = 0; i < text.Length; i++)
             {
@@ -36,6 +35,8 @@ namespace _19_04_work_with_char
 
             for (int i = 0; i < arra.Length; i++) // кодирование
             {
+                 n = rnd.Next(1, 7);
+                 codeOfWords[i] = n;
                 erre[i] = (int)arra[i];
                 erre[i] = erre[i] + n;
             }
@@ -54,23 +55,23 @@ namespace _19_04_work_with_char
 
             }
 
-            File.AppendAllText(@"C:\Users\HP\Desktop\code_the_text.txt", wordsAnother);
+            File.AppendAllText(@"C:\Users\student\Desktop\code_the_text.txt", wordsAnother);
             Console.WriteLine("Кодированный текст: " + wordsAnother);
             for (int i = 0; i < arra.Length; i++) //декод
             {
                 erre[i] = (int)more[i];
-                erre[i] = erre[i] - n;
+                erre[i] = erre[i] - codeOfWords[i];
             }
             for (int i = 0; i < erre.Length; i++)
             {
                 end[i] = (char)erre[i];
             }
-            string endWords = "\r\n";
+            string endWords = "\r\n" +" декодированный текст: " ;
             for (int i = 0; i < end.Length; i++)
             {
                 endWords = endWords + end[i];
             }
-            File.AppendAllText(@"C:\Users\HP\Desktop\code_the_text.txt", endWords);
+            File.AppendAllText(@"C:\Users\student\Desktop\code_the_text.txt", endWords);
             Console.WriteLine("Декодированный текст: " + endWords);
         }
     }
