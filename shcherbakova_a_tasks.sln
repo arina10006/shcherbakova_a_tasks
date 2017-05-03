@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_04_work_with_char", "19_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palendrom_in_text", "palendrom_in_text\palendrom_in_text.csproj", "{CFACF0EE-72CA-4A0C-AF06-C0C9F293DD11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.05.string_ex6", "03.05.string_ex6\03.05.string_ex6.csproj", "{A582D6ED-A705-4949-B61C-C46D6CC7784A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.05.string_ex16", "03.05.string_ex16\03.05.string_ex16.csproj", "{B00E1793-EA1D-4C9E-AC81-9C654326B4C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{CFACF0EE-72CA-4A0C-AF06-C0C9F293DD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFACF0EE-72CA-4A0C-AF06-C0C9F293DD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFACF0EE-72CA-4A0C-AF06-C0C9F293DD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A582D6ED-A705-4949-B61C-C46D6CC7784A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A582D6ED-A705-4949-B61C-C46D6CC7784A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A582D6ED-A705-4949-B61C-C46D6CC7784A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A582D6ED-A705-4949-B61C-C46D6CC7784A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00E1793-EA1D-4C9E-AC81-9C654326B4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00E1793-EA1D-4C9E-AC81-9C654326B4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00E1793-EA1D-4C9E-AC81-9C654326B4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00E1793-EA1D-4C9E-AC81-9C654326B4C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
