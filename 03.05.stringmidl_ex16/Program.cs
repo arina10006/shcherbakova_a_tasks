@@ -19,7 +19,7 @@ namespace _03._05.stringmidl_ex16
 
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\student\Desktop\date.txt");
+            string text = File.ReadAllText(@"C:\Users\HP\Desktop\date.txt");
 
             string[] date = text.Split(new char[] {';'});
             DateOfBirths[] dates = new DateOfBirths[date.Length];
@@ -64,18 +64,26 @@ namespace _03._05.stringmidl_ex16
                     
                     if (minMonth== dates[i].month)
 	                {
-                		 if (minDay>=dates[i].day)
+                		 if (minDay > dates[i].day)
                          {
-                            Console.WriteLine(dates[i].);
+                            Console.WriteLine("Самая маленькая дата: {0}.{1}.{2}",dates[i].day, dates[i].month, dates[i].year);
                          }
-                	}
+                        else
+                        {
+                            Console.WriteLine("Самая маленькая дата: {0}.{1}.{2}", minDay, dates[i].month, dates[i].year);
+                            break;
+                        }
+                    }
+                    
 	
                         
-                    }
                 }
+                
+
+            }
                 
             }
         }
 
     }
-}
+

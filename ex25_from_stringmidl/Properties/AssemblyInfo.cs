@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("03.05.string_ex16")]
+[assembly: AssemblyTitle("ex25_from_stringmidl")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("03.05.string_ex16")]
+[assembly: AssemblyProduct("ex25_from_stringmidl")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("47aae6a9-7d16-4df3-a453-dfc3886f7d95")]
+[assembly: Guid("29a77e37-9a9b-4d8f-8d32-ed477a81c868")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
