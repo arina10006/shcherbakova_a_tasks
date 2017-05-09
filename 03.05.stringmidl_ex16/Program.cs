@@ -78,11 +78,14 @@ namespace _03._05.stringmidl_ex16
 	
                         
                 }
-                
+
+
+
 
             }
-                
-            }
+            Console.WriteLine("Самая маленькая дата: {0}.{1}.{2}", minDay, minMonth, minYear);
+
+        }
         }
 
     }
