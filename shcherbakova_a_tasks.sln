@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metods", "metods\metods.csproj", "{5D026EEB-A13C-478A-9AAD-94F038ED6C32}"
 EndProject
@@ -44,6 +44,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.05.stutic_ex25", "10.05.stutic_ex25\10.05.stutic_ex25.csproj", "{96E173D1-46BF-4EFB-9667-8465FFEB7A5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.05.X2mass_ex6", "10.05.X2mass_ex6\10.05.X2mass_ex6.csproj", "{26216FA6-FC70-4DC1-A61A-100DE83425D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Xmass_ex16", "2Xmass_ex16\2Xmass_ex16.csproj", "{318BACAA-F096-47DE-9022-B9069242B687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Xmass_ex25", "2Xmass_ex25\2Xmass_ex25.csproj", "{55180855-7897-4315-B5A0-04E04BB44A61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,14 @@ Global
 		{26216FA6-FC70-4DC1-A61A-100DE83425D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26216FA6-FC70-4DC1-A61A-100DE83425D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26216FA6-FC70-4DC1-A61A-100DE83425D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318BACAA-F096-47DE-9022-B9069242B687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318BACAA-F096-47DE-9022-B9069242B687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318BACAA-F096-47DE-9022-B9069242B687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318BACAA-F096-47DE-9022-B9069242B687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55180855-7897-4315-B5A0-04E04BB44A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55180855-7897-4315-B5A0-04E04BB44A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55180855-7897-4315-B5A0-04E04BB44A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55180855-7897-4315-B5A0-04E04BB44A61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
