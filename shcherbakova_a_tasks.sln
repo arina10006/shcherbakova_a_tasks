@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication4", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Xmass_ex26", "2Xmass_ex26\2Xmass_ex26.csproj", "{3A25AF70-FACA-4D23-9B80-4409C0648F65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dateTime", "DateTime\dateTime.csproj", "{1B933A1B-E5F0-4D20-A1F9-EDD742B73019}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B933A1B-E5F0-4D20-A1F9-EDD742B73019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B933A1B-E5F0-4D20-A1F9-EDD742B73019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B933A1B-E5F0-4D20-A1F9-EDD742B73019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B933A1B-E5F0-4D20-A1F9-EDD742B73019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
