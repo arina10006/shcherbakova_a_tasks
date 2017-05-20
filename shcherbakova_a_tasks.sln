@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metods", "metods\metods.csproj", "{5D026EEB-A13C-478A-9AAD-94F038ED6C32}"
 EndProject
@@ -58,6 +58,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.05.2Xmass_ex15", "17.05.2Xmass_ex15\17.05.2Xmass_ex15.csproj", "{1BB45BA7-AEA8-45C7-AA70-05945570DE94}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication4", "ConsoleApplication4\ConsoleApplication4.csproj", "{6BE9432A-D792-4F02-9C69-F72EFEAEE930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Xmass_ex26", "2Xmass_ex26\2Xmass_ex26.csproj", "{3A25AF70-FACA-4D23-9B80-4409C0648F65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{6BE9432A-D792-4F02-9C69-F72EFEAEE930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BE9432A-D792-4F02-9C69-F72EFEAEE930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BE9432A-D792-4F02-9C69-F72EFEAEE930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A25AF70-FACA-4D23-9B80-4409C0648F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
