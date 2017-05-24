@@ -24,12 +24,19 @@ namespace Slovar_1
         }
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\HP\Desktop\news.txt");
-            text.ToLower();
+            string text = File.ReadAllText(@"C:\Users\student\Desktop\news.txt");
+            text = text.ToLower();
+            string[] newText = text.Split(new char[] { '.', ',', '-', '_', '(', ')', '«', '»',' ', ':', '?', '!'});
 
+            string allText = "";
+            foreach (string i in newText)
+            {
+                allText = allText + i + " ";
+            }
+            Console.WriteLine(allText);
             string unic = "";
 
-            foreach (char i in text)
+            foreach (char i in allText)
             {
                 if (unic.Length == 0)
                 {
@@ -45,7 +52,25 @@ namespace Slovar_1
                     }
                 }
             }
+            Console.WriteLine(unic);
             Dictionary <string, int> dictionary = new Dictionary<string, int>();
+
+            for (int i = 0; i < allText.Length; i++)
+            {
+                string symbol = Convert.ToString(allText[i]);
+                if (symbol != " ")
+                {
+                    if (!dictionary.ContainsKey(symbol))
+                    {
+                        dictionary[symbol] = 1;
+                    }
+                    else dictionary[symbol]++;
+                }
+            }
+            foreach (var pair in dictionary)
+            {
+                Console.WriteLine(pair.Key + "\t" + pair.Value);
+            }
             
         }
     }

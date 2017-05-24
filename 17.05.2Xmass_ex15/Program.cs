@@ -21,7 +21,7 @@ namespace _17._05._2Xmass_ex15
         }
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\HP\Desktop\mess.txt");
+            string text = File.ReadAllText(@"C:\Users\student\Desktop\mess.txt");
             string[] mess = text.Split(new char[] { '.' });
             int[][] mass = new int[mess.Length][];
             for (int i = 0; i < mess.Length; i++)
@@ -47,7 +47,7 @@ namespace _17._05._2Xmass_ex15
                 sum = sum + mass[i][mess.Length-1];
             }
             Console.WriteLine("Сумма элементов последнего столбца = {0}",sum);
-            File.AppendAllText(@"C:\Users\HP\Desktop\mess.txt", "Сумма элементов последнего столбца = "+ sum);
+            File.AppendAllText(@"C:\Users\student\Desktop\mess.txt", "Сумма элементов последнего столбца = "+ sum);
         }
     }
 }

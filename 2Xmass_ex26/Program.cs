@@ -22,7 +22,7 @@ namespace _2Xmass_ex26
         }
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\HP\Desktop\x.txt");
+            string text = File.ReadAllText(@"C:\Users\student\Desktop\x.txt");
             string[] mess = text.Split(new char[] {'.'});
             int[][] mass = new int[mess.Length][];
 
