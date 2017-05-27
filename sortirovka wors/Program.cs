@@ -99,6 +99,17 @@ namespace sortirovka_wors
             
             return words;
         }
+
+        static PairForDic[] SortirovkaForValue(PairForDic[] words, PairForDic value, PairForDic first, int index)
+        {
+            PairForDic one = first, two = value;
+            if (value.value>first.value)
+            {
+                words[index - 1] = two;
+                words[index] = one;
+            }
+            return words;
+        }
         static void Main(string[] args)
         {
             string text = File.ReadAllText(@"C:\Users\HP\Desktop\news.txt");
@@ -153,7 +164,6 @@ namespace sortirovka_wors
                         first = wordsAndVal[g];
                     }
 
-
                 }
             }
             
@@ -174,7 +184,37 @@ namespace sortirovka_wors
                 Console.WriteLine(pair.Key + "\t" + pair.Value);
                 v++;
             }
-           
+            Console.WriteLine("--------------------------------------------------------");
+            for (int i = wordsAndVal.Length - 1; i > 0; i--)
+            {
+                int one = wordsAndVal[i - 1].value, two = wordsAndVal[i].value;
+                if (one < two)
+                {
+                    PairForDic first = wordsAndVal[0];
+                    for (int g = 1; g < wordsAndVal.Length; g++)
+                    {
+                        wordsAndVal = SortirovkaForValue(wordsAndVal, wordsAndVal[g], first, g);
+                        first = wordsAndVal[g];
+                    }
+
+                }
+            }
+            for (int i = 0; i < wordsAndVal.Length; i++)
+            {
+                Console.WriteLine(wordsAndVal[i].key + "\t" + wordsAndVal[i].value);
+            }
+            Dictionary<string, int> dictionaryNew2 = new Dictionary<string, int>();
+            for (int i = 0; i < wordsAndVal.Length; i++)
+            {
+                dictionaryNew2[wordsAndVal[i].key] = wordsAndVal[i].value;
+            }
+            Console.WriteLine("--------------------------------------------------------");
+            foreach (var pair in dictionaryNew2)
+            {
+                Console.WriteLine(pair.Key + "\t" + pair.Value);
+                v++;
+            }
+            Console.WriteLine("--------------------------------------------------------");
             Console.ReadKey();
         }
     }
