@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "metods", "metods\metods.csproj", "{5D026EEB-A13C-478A-9AAD-94F038ED6C32}"
 EndProject
@@ -70,6 +70,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slovar_2", "Slovar_2\Slovar_2.csproj", "{E9A9DD46-88BC-4663-AD49-0FDA4E4131A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sortirovka wors", "sortirovka wors\sortirovka wors.csproj", "{38723512-A2DA-46C0-A175-88CF04F8834B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examle for sortirov", "examle for sortirov\examle for sortirov.csproj", "{123E0D4B-648B-42BB-9505-B0A74FDEAFBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{38723512-A2DA-46C0-A175-88CF04F8834B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38723512-A2DA-46C0-A175-88CF04F8834B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38723512-A2DA-46C0-A175-88CF04F8834B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{123E0D4B-648B-42BB-9505-B0A74FDEAFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123E0D4B-648B-42BB-9505-B0A74FDEAFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123E0D4B-648B-42BB-9505-B0A74FDEAFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123E0D4B-648B-42BB-9505-B0A74FDEAFBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

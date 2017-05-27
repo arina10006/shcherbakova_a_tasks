@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("sortirovka wors")]
+[assembly: AssemblyTitle("examle for sortirov")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("sortirovka wors")]
+[assembly: AssemblyProduct("examle for sortirov")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("a6eb2ede-1301-449c-b4ae-6acd0f62a7cf")]
+[assembly: Guid("123e0d4b-648b-42bb-9505-b0a74fdeafbe")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
