@@ -214,7 +214,7 @@ namespace sortirovka_wors
                 Console.WriteLine(pair.Key + "\t" + pair.Value);
                 v++;
             }
-            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------");
             Console.ReadKey();
         }
     }
