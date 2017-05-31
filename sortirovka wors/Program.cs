@@ -19,29 +19,29 @@ namespace sortirovka_wors
             string word1 = first.key, word2 = word.key;
             if (word1.Length == word2.Length)
             {
-                 for (int i = 0; i < word1.Length; i++)
-                 {
+                for (int i = 0; i < word1.Length; i++)
+                {
                     if ((int)word1[i] == (int)word2[i])
-                     {
+                    {
                         continue;
-                     }
+                    }
                     else
                     {
                         if ((int)word1[i] > (int)word2[i])
                         {
-                            words[index-1] = word;
+                            words[index - 1] = word;
                             words[index] = first;
                             //return words;
                             break;
                         }
                         else
                         {
-                           // return words;
+                            // return words;
                             break;
                         }
 
                     }
-                 }
+                }
             }
             if (word1.Length < word2.Length)
             {
@@ -57,12 +57,12 @@ namespace sortirovka_wors
                         {
                             words[index - 1] = word;
                             words[index] = first;
-                           // return words;
+                            // return words;
                             break;
                         }
                         else
                         {
-                           // return words;
+                            // return words;
                             break;
                         }
 
@@ -89,13 +89,14 @@ namespace sortirovka_wors
                         }
                         else
                         {
-                           // return words;
+                            // return words;
                             break;
                         }
 
                     }
                 }
             }
+
             
             return words;
         }
@@ -112,7 +113,7 @@ namespace sortirovka_wors
         }
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\HP\Desktop\news.txt");
+            string text = File.ReadAllText(@"C:\Users\student\Desktop\news.txt");
             text = text.ToLower();
             
             
@@ -166,9 +167,7 @@ namespace sortirovka_wors
 
                 }
             }
-            
-          
-            
+                 
             for (int i = 0; i < wordsAndVal.Length; i++)
             {
                 Console.WriteLine(wordsAndVal[i].key + "\t" + wordsAndVal[i].value);
@@ -179,6 +178,7 @@ namespace sortirovka_wors
                 dictionaryNew[wordsAndVal[i].key] = wordsAndVal[i].value;
             }
             Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("Словарь, отсортированный по алфавиту");
             foreach (var pair in dictionaryNew)
             {
                 Console.WriteLine(pair.Key + "\t" + pair.Value);
@@ -203,6 +203,7 @@ namespace sortirovka_wors
             {
                 Console.WriteLine(wordsAndVal[i].key + "\t" + wordsAndVal[i].value);
             }
+            Console.WriteLine("Словарь, отсортированный по значению");
             Dictionary<string, int> dictionaryNew2 = new Dictionary<string, int>();
             for (int i = 0; i < wordsAndVal.Length; i++)
             {

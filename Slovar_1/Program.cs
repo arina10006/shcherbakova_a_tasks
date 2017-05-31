@@ -71,7 +71,7 @@ namespace Slovar_1
             {
                 Console.WriteLine(pair.Key + "\t" + pair.Value);
             }
-            
+            Console.ReadKey();
         }
     }
 }
